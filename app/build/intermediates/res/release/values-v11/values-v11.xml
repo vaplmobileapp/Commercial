@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/San/StudioProjects/Vaighai%20Agro%20Products/app/src/main/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    <style name="MyTheme" parent="android:Theme.Light">
+         <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+        </style>
+</resources>

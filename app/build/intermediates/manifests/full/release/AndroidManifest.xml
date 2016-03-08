@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vaighai"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.example.vaighai.SplashScreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.vaighai.Login"
+            android:label="Vaighai Agro Products Ltd"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.vaighai.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.vaighai.Next"
+            android:label="Sales" />
+        <activity android:name="com.example.vaighai.Contract" />
+        <activity android:name="com.example.vaighai.Pencontract" />
+        <activity android:name="com.example.vaighai.Stock" />
+
+        <receiver
+            android:name="com.example.vaighai.TimeAlarm"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.vaighai.Listcont"
+            android:label="Contract" />
+        <activity
+            android:name="com.example.vaighai.Dobstock"
+            android:label="DOB Stock" />
+        <activity
+            android:name="com.example.vaighai.oilstock"
+            android:label="Oil Stock" />
+        <activity
+            android:name="com.example.vaighai.Feedstock"
+            android:label="Feed Stock" />
+        <activity
+            android:name="com.example.vaighai.fistock"
+            android:label="Fi Stock" />
+        <activity
+            android:name="com.example.vaighai.Wheatstock"
+            android:label="Wheat Stock" />
+        <activity
+            android:name="com.example.vaighai.Branstock"
+            android:label="Bran Stock" />
+        <activity
+            android:name="com.example.vaighai.Newuser"
+            android:label="New User" />
+        <activity android:name="com.example.vaighai.Notify" />
+        <activity android:name="com.example.vaighai.Pending47" />
+        <activity
+            android:name="com.example.vaighai.Arrivals"
+            android:label="Arrivals" />
+        <activity
+            android:name="com.example.vaighai.Outstanding"
+            android:label="Outstanding" />
+        <activity
+            android:name="com.example.vaighai.Production"
+            android:label="Production" />
+        <activity
+            android:name="com.example.vaighai.Dobsales"
+            android:label="DOB Sales" />
+        <activity
+            android:name="com.example.vaighai.salesfeed"
+            android:label="Feed Sales" />
+        <activity
+            android:name="com.example.vaighai.fisales"
+            android:label="FI Sales" />
+        <activity
+            android:name="com.example.vaighai.Oilsales"
+            android:label="Oil Sales" />
+        <activity android:name="com.example.vaighai.Pendingbran" />
+        <activity android:name="com.example.vaighai.Pendingdob" />
+        <activity android:name="com.example.vaighai.Pendingfeed" />
+        <activity android:name="com.example.vaighai.Pendingfi" />
+        <activity android:name="com.example.vaighai.Pendingoil" />
+        <activity android:name="com.example.vaighai.Arrmoncat" />
+        <activity android:name="com.example.vaighai.Salesmon" />
+        <activity android:name="com.example.vaighai.Salesmondob" />
+        <activity android:name="com.example.vaighai.Samonfeed" />
+        <activity android:name="com.example.vaighai.Samonfi" />
+        <activity android:name="com.example.vaighai.Samonoil" />
+        <activity android:name="com.example.vaighai.Gcrlimt" />
+        <activity android:name="com.example.vaighai.Creditlmt" />
+        <activity android:name="com.example.vaighai.Creditlimit" />
+        <activity android:name="com.example.vaighai.Itemselect" />
+        <activity android:name="com.example.vaighai.Dobparty" />
+    </application>
+
+</manifest>

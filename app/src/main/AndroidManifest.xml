@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vaighai"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+    
+    <application        
+        android:allowBackup="true"
+        
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" android:logo="@drawable/ic_launcher">
+        <activity android:name="SplashScreen" android:launchMode="singleTask" 
+            android:screenOrientation="landscape">
+                            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Login" android:label="Vaighai Agro Products Ltd" android:noHistory="true">        
+        </activity>
+        <activity
+            android:name="com.example.vaighai.MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity android:name="com.example.vaighai.Next" android:label="Sales"></activity>
+        <activity android:name="Contract"></activity>
+        <activity android:name="Pencontract"></activity>
+        <activity android:name="Stock"></activity>         
+          <receiver  android:name=".TimeAlarm" android:enabled="true"  android:exported="false">              
+             <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />             
+            </intent-filter>
+        </receiver>
+    
+    
+              <activity android:name="Listcont"   android:label="Contract" ></activity>
+              <activity android:name="Dobstock"
+               android:label="DOB Stock" ></activity>
+              <activity android:name="oilstock"  android:label="Oil Stock"></activity>
+              <activity android:name="Feedstock"  android:label="Feed Stock"></activity>
+              <activity android:name="fistock"  android:label="Fi Stock" ></activity>
+              <activity android:name="Wheatstock"  android:label="Wheat Stock"></activity>
+              <activity android:name="Branstock"  android:label="Bran Stock"></activity>
+              <activity android:name="Newuser"  android:label="New User"></activity>
+              <activity android:name="Notify"></activity>
+              <activity android:name="Pending47" ></activity>
+              <activity android:name="Arrivals"  android:label="Arrivals"></activity>
+              <activity android:name="Outstanding"  android:label="Outstanding"></activity>
+              <activity android:name="Production"  android:label="Production"></activity>
+              <activity android:name="Dobsales"  android:label="DOB Sales"></activity>
+              <activity android:name="salesfeed"  android:label="Feed Sales"></activity>
+              <activity android:name="fisales"  android:label="FI Sales"></activity>
+              <activity android:name="Oilsales"  android:label="Oil Sales"></activity>
+              <activity android:name="Pendingbran"></activity>
+              <activity android:name="Pendingdob"></activity>
+              <activity android:name="Pendingfeed"></activity>
+              <activity android:name="Pendingfi"></activity>
+              <activity android:name="Pendingoil"></activity>
+              <activity android:name="Arrmoncat"></activity>
+              <activity android:name="Salesmon"></activity>
+              <activity android:name="Salesmondob"></activity>
+              <activity android:name="Samonfeed"></activity>
+              <activity android:name="Samonfi"></activity>
+              <activity android:name="Samonoil"></activity>
+              <activity android:name="Gcrlimt"></activity>
+              <activity android:name="Creditlmt"></activity>
+              <activity android:name="Creditlimit"></activity>
+              <activity android:name="Itemselect"></activity>
+              <activity android:name="Dobparty"></activity>
+              
+           </application>
+            
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.READ_PROFILE" />
+<uses-permission android:name="android.permission.READ_CONTACTS" />  
+<uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>  
+ <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />      
+</manifest>

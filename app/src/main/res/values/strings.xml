@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vaighai Agro Products</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Month">Month</string>
+    <string name="item_select">Select Item</string>
+    <string name="Search_Grop">Search Group</string>
+    
+    <string-array name="itemcat">
+        <item>DOB</item>
+        <item>OIL</item>        
+    </string-array>
+
+</resources>

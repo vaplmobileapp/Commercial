@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"      
+    android:background="#231F20">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"   
+        android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"
+        android:textColor="#F0FFFF"  
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="User Name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        android:textColor="#F0FFFF"
+        
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"        
+       android:background="@drawable/btn_corner" 
+        android:textColor="#F5F5DC"
+        android:gravity="center"
+        android:textStyle="bold"      
+         
+        android:text="Done" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"
+        android:background="#F0FFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"
+        android:background="#F0FFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="19dp"
+         android:background="@drawable/btn_corner" 
+        android:gravity="center"
+        android:text="New User"
+        android:textColor="#F5F5DC"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/San/StudioProjects/Vaighai%20Agro%20Products/app/src/main/res/layout/login.xml -->
